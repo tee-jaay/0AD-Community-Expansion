@@ -1,0 +1,9 @@
+{
+    "name": "campaign_collection",
+    "version": "0.1.0",
+    "label": "0 A.D. Campaign Collection",
+    "description": "Story-driven and historically grounded campaigns for 0 A.D.",
+    "dependencies": [
+        "0ad=0.28.0"
+    ]
+}

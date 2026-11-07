@@ -1,0 +1,32 @@
+# OS and editors
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Build output
+build/
+cmake-build-*/
+dist/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# 0 A.D. temporary files
+*.pyc
+__pycache__/
