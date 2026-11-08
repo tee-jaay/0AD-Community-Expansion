@@ -1,0 +1,16 @@
+{
+    "Name": "The Border Village",
+    "Description": "A test campaign introducing the campaign collection framework.",
+    "Levels": {
+        "border_village_01": {
+            "Name": "The First Encounter",
+            "Map": "tutorials/introductory_tutorial.xml",
+            "MapType": "scenario",
+            "Description": "A temporary test mission used to verify campaign loading."
+        }
+    },
+    "Order": [
+        "border_village_01"
+    ],
+    "ShowUnavailable": true
+}
