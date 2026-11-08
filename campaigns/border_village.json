@@ -12,5 +12,6 @@
     "Order": [
         "border_village_01"
     ],
-    "ShowUnavailable": true
+    "ShowUnavailable": true,
+    "Category": "Story-driven"
 }
