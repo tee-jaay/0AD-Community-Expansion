@@ -54,9 +54,16 @@ class CampaignSetupPage extends AutoWatcher
 
     setCategory(category)
     {
+        if (this.activeCategory === category)
+            return;
+
         this.activeCategory = category;
         this.selectedIndex = -1;
         this.selectedTemplate = null;
+
+        // Clear the actual GUI list selection before changing its contents.
+        this.campaignSelection.selected = -1;
+
         this.render();
     }
 
