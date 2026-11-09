@@ -4,7 +4,7 @@
     "Levels": {
         "border_village_01": {
             "Name": "The First Encounter",
-            "Map": "tutorials/introductory_tutorial.xml",
+            "Map": "scenarios/border_village_01.xml",
             "MapType": "scenario",
             "Description": "A temporary test mission used to verify campaign loading."
         }
