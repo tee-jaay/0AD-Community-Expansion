@@ -32,7 +32,5 @@ Existing 0 A.D. campaign loading, maps and session handling.
 - [ ] Hannibal's War
 
 ## Current blocker
-- Atlas-generated scenario maps are not exposing their `TriggerScripts`
-  entries through `Engine.LoadMapSettings()`.
-- Investigate the scenario metadata loading path before changing the
-  difficulty trigger implementation.
+- Verify in-game that campaign launches load the shared difficulty hook and
+  apply the selected native trigger-difficulty setting to starting resources.

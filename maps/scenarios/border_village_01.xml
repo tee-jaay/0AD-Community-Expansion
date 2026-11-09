@@ -64,9 +64,13 @@
   "Seed": 0,
   "Size": 128,
   "SupportedBiomes": "alpine/",
-  "TriggerScripts": [
-    "scenarios/CampaignDifficulty.js"
-  ],
+  "SupportedTriggerDifficulties": {
+    "Values": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
   "VictoryConditions": [
     "conquest"
   ]

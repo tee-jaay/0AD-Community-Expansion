@@ -114,6 +114,7 @@
 				"mapName": this.getLevelName(level),
 				"mapPreview": level.Preview && "cropped:" + 400/512 + "," + 300/512 + ":" + level.Preview,
 				"CheatsEnabled": true,
+				"TriggerScripts": ["scripts/CampaignDifficulty.js"],
 				"TriggerDifficulty": {
 			        "easy": 2,
 			        "normal": 3,
@@ -136,15 +137,8 @@
 
 		const gameSettings = new GameSettings().init();
 		gameSettings.fromInitAttributes(settings);
-		warn("CAMPAIGN DEBUG: map = " + gameSettings.map.map);
-		const directMapData = Engine.LoadMapSettings("maps/scenarios/border_village_01.xml");
-		warn("CAMPAIGN DEBUG: direct XML TriggerScripts = " + uneval(directMapData && directMapData.settings && directMapData.settings.TriggerScripts));
-
-		warn("CAMPAIGN DEBUG: data keys = " + uneval(Object.keys(gameSettings.map.data || {})));
-		warn("CAMPAIGN DEBUG: settings keys = " + uneval(Object.keys(gameSettings.map.data && gameSettings.map.data.settings || {})));
-		warn("CAMPAIGN DEBUG: ScriptSettings = " + uneval(gameSettings.map.data && gameSettings.map.data.ScriptSettings));
-		warn("CAMPAIGN DEBUG: settings TriggerScripts = " + uneval(gameSettings.map.data && gameSettings.map.data.settings && gameSettings.map.data.settings.TriggerScripts));
-
+		gameSettings.triggerDifficulty.available = ["Easy", "Medium", "Hard"];
+		gameSettings.triggerDifficulty.setValue(settings.settings.TriggerDifficulty);
 
 		if (level.useGameSetup)
 		{
