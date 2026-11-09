@@ -65,12 +65,11 @@
   "Size": 128,
   "SupportedBiomes": "alpine/",
   "TriggerScripts": [
-    "tutorials/CampaignDifficulty.js"
+    "scenarios/CampaignDifficulty.js"
   ],
   "VictoryConditions": [
     "conquest"
-  ],
-  "mapType": "random"
+  ]
 }
 ]]></ScriptSettings>
 	<Entities>
