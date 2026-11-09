@@ -28,6 +28,7 @@ Existing 0 A.D. campaign loading, maps and session handling.
 ### Planned campaigns
 - [ ] The Last Kingdom
 - [ ] Rise of Rome
+- [ ] Persian Empire
 - [ ] Alexander the Great
 - [ ] Hannibal's War
 
