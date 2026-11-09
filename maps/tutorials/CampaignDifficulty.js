@@ -1,4 +1,4 @@
-
+warn("CampaignDifficulty.js LOADED");
 function GetCampaignDifficulty()
 {
     const cmpGuiInterface = Engine.QueryInterface(
