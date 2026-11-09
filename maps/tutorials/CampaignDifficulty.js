@@ -4,7 +4,7 @@ function GetCampaignDifficulty()
     const cmpGuiInterface = Engine.QueryInterface(
         SYSTEM_ENTITY,
         IID_GuiInterface
-    );
+        );
 
     const initAttributes = cmpGuiInterface.GetInitAttributes();
 
@@ -49,11 +49,11 @@ Trigger.prototype.ApplyCampaignDifficulty = function()
     const cmpPlayerManager = Engine.QueryInterface(
         SYSTEM_ENTITY,
         IID_PlayerManager
-    );
+        );
 
     const players = [
-        { "id": 1, "multiplier": settings.player },
-        { "id": 2, "multiplier": settings.enemy }
+    { "id": 1, "multiplier": settings.player },
+    { "id": 2, "multiplier": settings.enemy }
     ];
 
     for (const entry of players)
@@ -74,16 +74,24 @@ Trigger.prototype.ApplyCampaignDifficulty = function()
         for (const resource in currentResources)
             adjustedResources[resource] = Math.round(
                 currentResources[resource] * entry.multiplier
-            );
+                );
 
         cmpPlayer.SetResourceCounts(adjustedResources);
+
+        for (const resource in adjustedResources)
+        {
+            warn(
+                "Campaign Collection: Player " + entry.id +
+                " " + resource + " = " + adjustedResources[resource]
+                );
+        }
     }
 
     warn(
         "Campaign Collection: Applied " + difficulty +
         " difficulty. Player multiplier: " + settings.player +
         ", enemy multiplier: " + settings.enemy
-    );
+        );
 };
 
 {
@@ -93,5 +101,5 @@ Trigger.prototype.ApplyCampaignDifficulty = function()
         "OnInitGame",
         "ApplyCampaignDifficulty",
         { "enabled": true }
-    );
+        );
 }
