@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>sunny</SkySet>
+		<SunColor r="1" g="0.96" b="0.84"/>
+		<SunElevation angle="0.88"/>
+		<SunRotation angle="-1.0"/>
+		<AmbientColor r="0.37" g="0.39" b="0.42"/>
+		<Fog>
+			<FogFactor>0</FogFactor>
+			<FogThickness>0.4</FogThickness>
+			<FogColor r="0.82" g="0.83" b="0.79"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.3" g="0.38" b="0.5"/>
+				<Tint r="0.28" g="0.34" b="0.45"/>
+				<Height>18</Height>
+				<Waviness>3</Waviness>
+				<Murkiness>0.55</Murkiness>
+				<WindAngle>0.2</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>1</Saturation>
+			<Bloom>0.15</Bloom>
+			<PostEffect>default</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="256" y="90" z="100"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.61"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "Sabine forces under Titus Tatius challenge Rome. Break their host and force a settlement.",
+  "Keywords": ["campaign", "trigger", "rome"],
+  "LockTeams": false,
+  "Name": "Titus Tatius: Sabine Conflict",
+  "PlayerData": [
+    {
+      "Civ": "rome",
+      "Color": {"b": 40, "g": 40, "r": 180},
+      "Name": "Romans",
+      "Resources": {"food": 500, "metal": 250, "stone": 250, "wood": 500}
+    },
+    {
+      "AI": "petra",
+      "Civ": "rome",
+      "Color": {"b": 120, "g": 80, "r": 60},
+      "Name": "Sabines (Titus Tatius)"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "Seed": 0,
+  "Size": 128,
+  "SupportedTriggerDifficulties": {"Values": ["Easy", "Medium", "Hard"]},
+  "TriggerScripts": ["tutorials/CampaignDifficulty.js"],
+  "VictoryConditions": ["conquest"]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11"><Template>structures/rome/civil_centre</Template><Player>1</Player><Position x="256" z="180"/><Orientation y="0"/></Entity>
+		<Entity uid="12"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="248" z="170"/><Orientation y="2.3"/></Entity>
+		<Entity uid="13"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="264" z="170"/><Orientation y="-2.3"/></Entity>
+		<Entity uid="14"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="240" z="186"/><Orientation y="1.5"/></Entity>
+		<Entity uid="15"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="272" z="186"/><Orientation y="-1.5"/></Entity>
+		<Entity uid="16"><Template>units/rome/infantry_swordsman_b</Template><Player>1</Player><Position x="252" z="194"/><Orientation y="3.14"/></Entity>
+		<Entity uid="17"><Template>units/rome/infantry_swordsman_b</Template><Player>1</Player><Position x="260" z="194"/><Orientation y="3.14"/></Entity>
+		<Entity uid="18"><Template>units/rome/cavalry_javelineer_b</Template><Player>1</Player><Position x="256" z="200"/><Orientation y="3.14"/></Entity>
+		<Entity uid="21"><Template>structures/rome/civil_centre</Template><Player>2</Player><Position x="256" z="350"/><Orientation y="3.14"/></Entity>
+		<Entity uid="22"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="242" z="335"/><Orientation y="0"/></Entity>
+		<Entity uid="23"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="270" z="335"/><Orientation y="0"/></Entity>
+		<Entity uid="24"><Template>units/rome/infantry_swordsman_b</Template><Player>2</Player><Position x="252" z="330"/><Orientation y="0"/></Entity>
+		<Entity uid="25"><Template>units/rome/infantry_swordsman_b</Template><Player>2</Player><Position x="260" z="330"/><Orientation y="0"/></Entity>
+		<Entity uid="26"><Template>units/rome/infantry_javelineer_b</Template><Player>2</Player><Position x="256" z="324"/><Orientation y="0"/></Entity>
+		<Entity uid="27"><Template>units/rome/cavalry_spearman_b</Template><Player>2</Player><Position x="248" z="318"/><Orientation y="0"/></Entity>
+		<Entity uid="30"><Template>gaia/tree/pine</Template><Player>0</Player><Position x="245" z="280"/><Orientation y="0.2"/></Entity>
+		<Entity uid="31"><Template>gaia/tree/pine</Template><Player>0</Player><Position x="355" z="280"/><Orientation y="1.4"/></Entity>
+		<Entity uid="32"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="270" z="175"/><Orientation y="0"/></Entity>
+		<Entity uid="33"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="330" z="175"/><Orientation y="0"/></Entity>
+		<Entity uid="34"><Template>gaia/fauna_goat</Template><Player>0</Player><Position x="320" z="215"/><Orientation y="0.9"/></Entity>
+		<Entity uid="35"><Template>gaia/fauna_goat</Template><Player>0</Player><Position x="325" z="218"/><Orientation y="-0.4"/></Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

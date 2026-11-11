@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>sunny</SkySet>
+		<SunColor r="1" g="0.97" b="0.86"/>
+		<SunElevation angle="0.85"/>
+		<SunRotation angle="-0.9"/>
+		<AmbientColor r="0.38" g="0.39" b="0.43"/>
+		<Fog>
+			<FogFactor>0</FogFactor>
+			<FogThickness>0.4</FogThickness>
+			<FogColor r="0.82" g="0.84" b="0.8"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.3" g="0.38" b="0.5"/>
+				<Tint r="0.28" g="0.34" b="0.45"/>
+				<Height>18</Height>
+				<Waviness>4</Waviness>
+				<Murkiness>0.6</Murkiness>
+				<WindAngle>0.4</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>1</Saturation>
+			<Bloom>0.15</Bloom>
+			<PostEffect>default</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="256" y="110" z="120"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.61"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "753 BCE, legend remembers. Romulus gathers outcasts and herdsmen on the hills above the Tiber to found a refuge that will one day be Rome. Rival clans strike to strangle the settlement in its cradle. Defend your people, withstand the raids, and break the enemy camp to secure the river crossing.",
+  "Keywords": ["campaign", "trigger", "rome", "story"],
+  "LockTeams": false,
+  "Name": "Romulus: Founding on the Tiber",
+  "PlayerData": [
+    null,
+    {
+      "Civ": "rome",
+      "Color": {"b": 40, "g": 40, "r": 180},
+      "Name": "Romulus and the Founders",
+      "Resources": {"food": 600, "metal": 250, "stone": 250, "wood": 600},
+      "Team": -1
+    },
+    {
+      "AI": "petra",
+      "Civ": "iber",
+      "Color": {"b": 60, "g": 120, "r": 60},
+      "Name": "Hostile Clans",
+      "Resources": {"food": 400, "metal": 150, "stone": 150, "wood": 400},
+      "Team": -1
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "Seed": 1,
+  "Size": 128,
+  "SupportedTriggerDifficulties": {"Values": ["Easy", "Medium", "Hard"]},
+  "TriggerScripts": [
+    "scripts/TriggerHelper.js",
+    "tutorials/CampaignDifficulty.js",
+    "scripts/rise_of_rome_01_romulus.js"
+  ],
+  "VictoryConditions": ["conquest"]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11"><Template>structures/rome/civil_centre</Template><Player>1</Player><Position x="256" z="190"/><Orientation y="0"/></Entity>
+		<Entity uid="12"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="248" z="180"/><Orientation y="2.3"/></Entity>
+		<Entity uid="13"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="252" z="178"/><Orientation y="2.3"/></Entity>
+		<Entity uid="14"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="260" z="178"/><Orientation y="-2.3"/></Entity>
+		<Entity uid="15"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="264" z="180"/><Orientation y="-2.3"/></Entity>
+		<Entity uid="16"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="242" z="195"/><Orientation y="1.5"/></Entity>
+		<Entity uid="17"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="270" z="195"/><Orientation y="-1.5"/></Entity>
+		<Entity uid="18"><Template>units/rome/infantry_swordsman_b</Template><Player>1</Player><Position x="256" z="204"/><Orientation y="3.14"/></Entity>
+		<Entity uid="19"><Template>units/rome/infantry_javelineer_b</Template><Player>1</Player><Position x="250" z="202"/><Orientation y="3.14"/></Entity>
+		<Entity uid="20"><Template>units/rome/infantry_javelineer_b</Template><Player>1</Player><Position x="262" z="202"/><Orientation y="3.14"/></Entity>
+		<Entity uid="21"><Template>structures/iber/civil_centre</Template><Player>2</Player><Position x="256" z="340"/><Orientation y="3.14"/></Entity>
+		<Entity uid="22"><Template>units/iber/infantry_swordsman_b</Template><Player>2</Player><Position x="246" z="325"/><Orientation y="0"/></Entity>
+		<Entity uid="23"><Template>units/iber/infantry_swordsman_b</Template><Player>2</Player><Position x="266" z="325"/><Orientation y="0"/></Entity>
+		<Entity uid="24"><Template>units/iber/infantry_javelineer_b</Template><Player>2</Player><Position x="252" z="320"/><Orientation y="0"/></Entity>
+		<Entity uid="25"><Template>units/iber/infantry_javelineer_b</Template><Player>2</Player><Position x="260" z="320"/><Orientation y="0"/></Entity>
+		<Entity uid="26"><Template>units/iber/infantry_spearman_b</Template><Player>2</Player><Position x="256" z="315"/><Orientation y="0"/></Entity>
+		<Entity uid="27"><Template>gaia/tree/oak</Template><Player>0</Player><Position x="206" z="250"/><Orientation y="0.4"/></Entity>
+		<Entity uid="28"><Template>gaia/tree/oak</Template><Player>0</Player><Position x="216" z="260"/><Orientation y="1.1"/></Entity>
+		<Entity uid="29"><Template>gaia/tree/oak</Template><Player>0</Player><Position x="296" z="255"/><Orientation y="-0.8"/></Entity>
+		<Entity uid="30"><Template>gaia/tree/oak</Template><Player>0</Player><Position x="306" z="265"/><Orientation y="2.1"/></Entity>
+		<Entity uid="31"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="231" z="175"/><Orientation y="0"/></Entity>
+		<Entity uid="32"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="281" z="175"/><Orientation y="0"/></Entity>
+		<Entity uid="33"><Template>gaia/fauna_sheep</Template><Player>0</Player><Position x="236" z="210"/><Orientation y="0.7"/></Entity>
+		<Entity uid="34"><Template>gaia/fauna_sheep</Template><Player>0</Player><Position x="241" z="212"/><Orientation y="1.2"/></Entity>
+		<Entity uid="35"><Template>gaia/fauna_sheep</Template><Player>0</Player><Position x="276" z="210"/><Orientation y="-0.5"/></Entity>
+		<Entity uid="36"><Template>gaia/rock/mediterranean_large</Template><Player>0</Player><Position x="196" z="200"/><Orientation y="0.3"/></Entity>
+		<Entity uid="37"><Template>gaia/ore/mediterranean_small</Template><Player>0</Player><Position x="316" z="200"/><Orientation y="1.7"/></Entity>
+		<Entity uid="38"><Template>actor|props/flora/bush_medit_me.xml</Template><Position x="230" z="230"/><Orientation y="0.5"/></Entity>
+		<Entity uid="39"><Template>actor|props/flora/bush_medit_me.xml</Template><Position x="282" z="232"/><Orientation y="-1.2"/></Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

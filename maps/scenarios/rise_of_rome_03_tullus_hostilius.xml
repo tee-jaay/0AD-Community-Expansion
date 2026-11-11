@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>sunny</SkySet>
+		<SunColor r="0.99" g="0.95" b="0.83"/>
+		<SunElevation angle="0.82"/>
+		<SunRotation angle="-1.1"/>
+		<AmbientColor r="0.38" g="0.39" b="0.43"/>
+		<Fog>
+			<FogFactor>0</FogFactor>
+			<FogThickness>0.4</FogThickness>
+			<FogColor r="0.81" g="0.83" b="0.78"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.3" g="0.38" b="0.5"/>
+				<Tint r="0.28" g="0.34" b="0.45"/>
+				<Height>18</Height>
+				<Waviness>3</Waviness>
+				<Murkiness>0.55</Murkiness>
+				<WindAngle>0.1</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>0</Brightness>
+			<Contrast>1</Contrast>
+			<Saturation>1</Saturation>
+			<Bloom>0.15</Bloom>
+			<PostEffect>default</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="256" y="90" z="90"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.61"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "King Tullus Hostilius marches on Alba Longa. Conquer the rival Latin city to unite the Alban people under Rome.",
+  "Keywords": ["campaign", "trigger", "rome"],
+  "LockTeams": false,
+  "Name": "Tullus Hostilius: Alba Longa",
+  "PlayerData": [
+    {
+      "Civ": "rome",
+      "Color": {"b": 40, "g": 40, "r": 180},
+      "Name": "Rome (Tullus Hostilius)",
+      "Resources": {"food": 600, "metal": 300, "stone": 300, "wood": 600}
+    },
+    {
+      "AI": "petra",
+      "Civ": "rome",
+      "Color": {"b": 80, "g": 140, "r": 80},
+      "Name": "Alba Longa"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "Seed": 0,
+  "Size": 128,
+  "SupportedTriggerDifficulties": {"Values": ["Easy", "Medium", "Hard"]},
+  "TriggerScripts": ["tutorials/CampaignDifficulty.js"],
+  "VictoryConditions": ["conquest"]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11"><Template>structures/rome/civil_centre</Template><Player>1</Player><Position x="256" z="170"/><Orientation y="0"/></Entity>
+		<Entity uid="12"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="246" z="160"/><Orientation y="2.3"/></Entity>
+		<Entity uid="13"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="266" z="160"/><Orientation y="-2.3"/></Entity>
+		<Entity uid="14"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="256" z="158"/><Orientation y="3.14"/></Entity>
+		<Entity uid="15"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="238" z="178"/><Orientation y="1.5"/></Entity>
+		<Entity uid="16"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="274" z="178"/><Orientation y="-1.5"/></Entity>
+		<Entity uid="17"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="250" z="186"/><Orientation y="3.14"/></Entity>
+		<Entity uid="18"><Template>units/rome/infantry_swordsman_b</Template><Player>1</Player><Position x="262" z="186"/><Orientation y="3.14"/></Entity>
+		<Entity uid="19"><Template>units/rome/infantry_javelineer_b</Template><Player>1</Player><Position x="256" z="192"/><Orientation y="3.14"/></Entity>
+		<Entity uid="21"><Template>structures/rome/civil_centre</Template><Player>2</Player><Position x="256" z="360"/><Orientation y="3.14"/></Entity>
+		<Entity uid="22"><Template>structures/rome/tower_bolt</Template><Player>2</Player><Position x="236" z="345"/><Orientation y="0"/></Entity>
+		<Entity uid="23"><Template>structures/rome/tower_bolt</Template><Player>2</Player><Position x="276" z="345"/><Orientation y="0"/></Entity>
+		<Entity uid="24"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="244" z="340"/><Orientation y="0"/></Entity>
+		<Entity uid="25"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="268" z="340"/><Orientation y="0"/></Entity>
+		<Entity uid="26"><Template>units/rome/infantry_swordsman_b</Template><Player>2</Player><Position x="252" z="334"/><Orientation y="0"/></Entity>
+		<Entity uid="27"><Template>units/rome/infantry_swordsman_b</Template><Player>2</Player><Position x="260" z="334"/><Orientation y="0"/></Entity>
+		<Entity uid="28"><Template>units/rome/infantry_javelineer_b</Template><Player>2</Player><Position x="256" z="328"/><Orientation y="0"/></Entity>
+		<Entity uid="30"><Template>gaia/tree/olive</Template><Player>0</Player><Position x="240" z="270"/><Orientation y="0.6"/></Entity>
+		<Entity uid="31"><Template>gaia/tree/olive</Template><Player>0</Player><Position x="360" z="270"/><Orientation y="-1.2"/></Entity>
+		<Entity uid="32"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="265" z="165"/><Orientation y="0"/></Entity>
+		<Entity uid="33"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="335" z="165"/><Orientation y="0"/></Entity>
+		<Entity uid="34"><Template>gaia/rock/mediterranean_large</Template><Player>0</Player><Position x="350" z="200"/><Orientation y="0.9"/></Entity>
+		<Entity uid="35"><Template>gaia/ore/mediterranean_small</Template><Player>0</Player><Position x="250" z="200"/><Orientation y="2.1"/></Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

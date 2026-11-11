@@ -1,0 +1,38 @@
+{
+  "Name": "Rise of Rome",
+  "Description": "Lead Rome from its legendary foundations through the struggles that forged the Republic.",
+  "Levels": {
+    "rise_of_rome_01_romulus": {
+      "Name": "Romulus: Founding on the Tiber",
+      "Map": "scenarios/rise_of_rome_01_romulus.xml",
+      "MapType": "scenario",
+      "Description": "Defend the fledgling settlement on the Tiber and establish Rome's first foothold (legendary frame)."
+    },
+    "rise_of_rome_02_titus_tatius": {
+      "Name": "Titus Tatius: Sabine Conflict",
+      "Map": "scenarios/rise_of_rome_02_titus_tatius.xml",
+      "MapType": "scenario",
+      "Description": "Confront the Sabines and secure peace through strength in the early kingship era."
+    },
+    "rise_of_rome_03_tullus_hostilius": {
+      "Name": "Tullus Hostilius: Alba Longa",
+      "Map": "scenarios/rise_of_rome_03_tullus_hostilius.xml",
+      "MapType": "scenario",
+      "Description": "Challenge Alba Longa and bring the rival Latin city under Roman leadership (Horatii–Curiatii era frame)."
+    },
+    "rise_of_rome_04_tarquinius_porsena": {
+      "Name": "Superbus and Porsena: Defense of the Tiber",
+      "Map": "scenarios/rise_of_rome_04_tarquinius_porsena.xml",
+      "MapType": "scenario",
+      "Description": "With monarchy fallen, hold the Tiber crossing against Lars Porsena's Etruscan host."
+    }
+  },
+  "Order": [
+    "rise_of_rome_01_romulus",
+    "rise_of_rome_02_titus_tatius",
+    "rise_of_rome_03_tullus_hostilius",
+    "rise_of_rome_04_tarquinius_porsena"
+  ],
+  "ShowUnavailable": true,
+  "Category": "Historical"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scenario version="7">
+	<Environment>
+		<SkySet>cloudy</SkySet>
+		<SunColor r="0.95" g="0.93" b="0.85"/>
+		<SunElevation angle="0.75"/>
+		<SunRotation angle="-1.2"/>
+		<AmbientColor r="0.4" g="0.41" b="0.45"/>
+		<Fog>
+			<FogFactor>0.001</FogFactor>
+			<FogThickness>0.35</FogThickness>
+			<FogColor r="0.78" g="0.8" b="0.82"/>
+		</Fog>
+		<Water>
+			<WaterBody>
+				<Type>ocean</Type>
+				<Color r="0.28" g="0.36" b="0.48"/>
+				<Tint r="0.26" g="0.32" b="0.42"/>
+				<Height>18</Height>
+				<Waviness>5</Waviness>
+				<Murkiness>0.65</Murkiness>
+				<WindAngle>0.6</WindAngle>
+			</WaterBody>
+		</Water>
+		<Postproc>
+			<Brightness>-0.02</Brightness>
+			<Contrast>1.02</Contrast>
+			<Saturation>0.98</Saturation>
+			<Bloom>0.12</Bloom>
+			<PostEffect>default</PostEffect>
+		</Postproc>
+	</Environment>
+	<Camera>
+		<Position x="256" y="90" z="80"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.61"/>
+	</Camera>
+	<ScriptSettings><![CDATA[
+{
+  "AISeed": 0,
+  "AllyView": false,
+  "CircularMap": true,
+  "Description": "The young Republic faces Lars Porsena of Clusium, marching in support of the deposed Tarquins. Hold Rome and defeat the Etruscan army.",
+  "Keywords": ["campaign", "trigger", "rome", "etruscan"],
+  "LockTeams": false,
+  "Name": "Superbus and Porsena: Defense of the Tiber",
+  "PlayerData": [
+    {
+      "Civ": "rome",
+      "Color": {"b": 40, "g": 40, "r": 180},
+      "Name": "Roman Republic",
+      "Resources": {"food": 600, "metal": 350, "stone": 350, "wood": 600}
+    },
+    {
+      "AI": "petra",
+      "Civ": "rome",
+      "Color": {"b": 140, "g": 100, "r": 100},
+      "Name": "Lars Porsena / Tarquin Allies"
+    }
+  ],
+  "Preview": "",
+  "RevealMap": false,
+  "Seed": 0,
+  "Size": 128,
+  "SupportedTriggerDifficulties": {"Values": ["Easy", "Medium", "Hard"]},
+  "TriggerScripts": ["tutorials/CampaignDifficulty.js"],
+  "VictoryConditions": ["conquest"]
+}
+]]></ScriptSettings>
+	<Entities>
+		<Entity uid="11"><Template>structures/rome/civil_centre</Template><Player>1</Player><Position x="256" z="160"/><Orientation y="0"/></Entity>
+		<Entity uid="12"><Template>structures/rome/tower_bolt</Template><Player>1</Player><Position x="241" z="175"/><Orientation y="0"/></Entity>
+		<Entity uid="13"><Template>structures/rome/tower_bolt</Template><Player>1</Player><Position x="271" z="175"/><Orientation y="0"/></Entity>
+		<Entity uid="14"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="248" z="150"/><Orientation y="2.3"/></Entity>
+		<Entity uid="15"><Template>units/rome/support_female_citizen</Template><Player>1</Player><Position x="264" z="150"/><Orientation y="-2.3"/></Entity>
+		<Entity uid="16"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="236" z="168"/><Orientation y="1.5"/></Entity>
+		<Entity uid="17"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="276" z="168"/><Orientation y="-1.5"/></Entity>
+		<Entity uid="18"><Template>units/rome/infantry_spearman_b</Template><Player>1</Player><Position x="250" z="178"/><Orientation y="3.14"/></Entity>
+		<Entity uid="19"><Template>units/rome/infantry_swordsman_b</Template><Player>1</Player><Position x="262" z="178"/><Orientation y="3.14"/></Entity>
+		<Entity uid="20"><Template>units/rome/infantry_javelineer_b</Template><Player>1</Player><Position x="256" z="184"/><Orientation y="3.14"/></Entity>
+		<Entity uid="21"><Template>structures/rome/civil_centre</Template><Player>2</Player><Position x="256" z="370"/><Orientation y="3.14"/></Entity>
+		<Entity uid="22"><Template>structures/rome/barracks</Template><Player>2</Player><Position x="231" z="355"/><Orientation y="0"/></Entity>
+		<Entity uid="23"><Template>structures/rome/barracks</Template><Player>2</Player><Position x="281" z="355"/><Orientation y="0"/></Entity>
+		<Entity uid="24"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="240" z="345"/><Orientation y="0"/></Entity>
+		<Entity uid="25"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="272" z="345"/><Orientation y="0"/></Entity>
+		<Entity uid="26"><Template>units/rome/infantry_spearman_b</Template><Player>2</Player><Position x="256" z="340"/><Orientation y="0"/></Entity>
+		<Entity uid="27"><Template>units/rome/infantry_swordsman_b</Template><Player>2</Player><Position x="248" z="334"/><Orientation y="0"/></Entity>
+		<Entity uid="28"><Template>units/rome/infantry_swordsman_b</Template><Player>2</Player><Position x="264" z="334"/><Orientation y="0"/></Entity>
+		<Entity uid="29"><Template>units/rome/infantry_javelineer_b</Template><Player>2</Player><Position x="244" z="328"/><Orientation y="0"/></Entity>
+		<Entity uid="30"><Template>units/rome/infantry_javelineer_b</Template><Player>2</Player><Position x="268" z="328"/><Orientation y="0"/></Entity>
+		<Entity uid="31"><Template>units/rome/cavalry_spearman_b</Template><Player>2</Player><Position x="256" z="322"/><Orientation y="0"/></Entity>
+		<Entity uid="40"><Template>gaia/tree/cypress</Template><Player>0</Player><Position x="240" z="280"/><Orientation y="0.3"/></Entity>
+		<Entity uid="41"><Template>gaia/tree/cypress</Template><Player>0</Player><Position x="360" z="280"/><Orientation y="1.8"/></Entity>
+		<Entity uid="42"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="265" z="155"/><Orientation y="0"/></Entity>
+		<Entity uid="43"><Template>gaia/fruit/berry_01</Template><Player>0</Player><Position x="335" z="155"/><Orientation y="0"/></Entity>
+		<Entity uid="44"><Template>gaia/rock/mediterranean_large</Template><Player>0</Player><Position x="350" z="190"/><Orientation y="0.5"/></Entity>
+		<Entity uid="45"><Template>gaia/ore/mediterranean_small</Template><Player>0</Player><Position x="250" z="190"/><Orientation y="1.1"/></Entity>
+	</Entities>
+	<Paths/>
+</Scenario>

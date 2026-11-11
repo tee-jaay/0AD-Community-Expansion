@@ -29,7 +29,7 @@ Existing 0 A.D. campaign loading, maps and session handling.
 - [ ] The Last Kingdom
 - [ ] Rise of Rome
   - [ ] A. Regal Rome — kings/rivals (4)
-    - [ ] 1. Romulus — founding/defense of early Rome (legendary frame)
+    - [x] 1. Romulus — founding/defense of early Rome (legendary frame)
     - [ ] 2. Titus Tatius / Sabine conflict — Sabine integration/war (early kingship era)
     - [ ] 3. Tullus Hostilius / Alba Longa — Horatii–Curiatii era frame; subdue Alba
     - [ ] 4. Lucius Tarquinius Superbus / Lars Porsena — fall of monarchy; defense at the Tiber (Porsena)
